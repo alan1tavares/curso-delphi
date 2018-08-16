@@ -1,0 +1,13 @@
+program Intervalo;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+begin
+if 100..200 then
+
+end.

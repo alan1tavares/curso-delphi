@@ -1,0 +1,42 @@
+program urna;
+
+{$APPTYPE CONSOLE}
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+  TotalDeVotantes, Incremento: Integer;
+  CandidatoA, CandidatoB, CandidatoC: Integer;
+  Candidato: Char;
+
+begin
+  CandidatoA, CandidatoB, CandidatoC := 0;
+
+  Write('Número de votantes: ');
+  Readln(TotalDeVotantes);
+
+  for Incremento := 1 to TotalDeVotantes do
+  begin
+    Write('Qual o candidato: ');
+    Readln(Candidato);
+
+    case ORD(Candidato) of
+      ORD('A'):
+        Inc(CandidatoA, 1);
+      ORD('B'):
+        Inc(CandidatoB, 1);
+      ORD('C'):
+        Inc(CandidatoC, 1);
+    end;
+
+  end;
+
+  Writeln('O candidato A tem: ', CandidatoA);
+  Writeln('O candidato B tem: ', CandidatoB);
+  Writeln('O candidato C tem: ', CandidatoC);
+
+  Readln;
+
+end.

@@ -1,0 +1,13 @@
+unit Unit1;
+
+interface
+  procedure swapDeDoisInteiros(var A, B: Integer);
+
+implementation
+
+procedure swapDeDoisInteiros(var A, B: Integer);
+begin
+  A := B
+end;
+
+end.

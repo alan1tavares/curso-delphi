@@ -1,0 +1,10 @@
+unit Unit1;
+
+interface
+
+implementation
+procedure swapDeDoisInteiros(var A, B: Integer);
+begin
+  A := B
+end;
+end.

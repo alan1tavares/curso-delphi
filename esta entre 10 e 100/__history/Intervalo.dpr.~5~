@@ -1,0 +1,18 @@
+program Intervalo;
+
+{$APPTYPE CONSOLE}
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+  ValorLido: Integer;
+
+begin
+  Readln(ValorLido);
+  case ValorLido of
+    100..200: Writeln(ValorLido, 'Está entre 100 e 200');
+  end;
+
+end.
